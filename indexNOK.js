@@ -1,11 +1,11 @@
 function calcula() {
   var casella1 = document.getElementById("valor");
   var casella2 = document.getElementById("valor2");
-  var venta =casella1.value;
-  var retorno =  casella2.valor2;
+  var venta = casella1.value;
+  var retorno =  casella2.value;
   var tipo = CalculaTipo(venta, retorno);
   var resultat;
-
+  
 switch (tipo) {
   case 5:
     resultat = "Eres un genio de la venta!!";
@@ -29,8 +29,8 @@ switch (tipo) {
     break;
 }
 
-var casella3 = document.getElementById("resultat");
-casella3.value= resultat;
+var casella2 = document.getElementById("resultat");
+casella2.value= resultat;
 
 }
 
@@ -45,15 +45,15 @@ function CalculaTipo(venta, retorno)
 
 if(venta >= 500)
 {
-  if(factor =100)
+  if(factor == 100)
   {
     resultat = 5;
   }
-  else if(factor>50)
+  else if(factor > 50)
   {
     resultat = 4;
   }
-  else if(factor=0)
+  else if(factor == 0)
   {
     resultat = 0;
   }
@@ -64,7 +64,7 @@ if(venta >= 500)
 }
 else
 {
-  if(factor>50)
+  if(factor > 50)
     {
       resultat = 3;
     }
@@ -73,6 +73,6 @@ else
       resultat = 2;
     }
 }
-  return result;
+  return resultat;
 }
   
