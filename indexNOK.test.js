@@ -22,3 +22,6 @@ describe("Función CalculaTipo", () => {
   });
   
 });
+
+//Este conjunto de pruebas se ha elegido para garantizar que la función se comporte correctamente en todos los escenarios definidos en la lógica de negocio, de acuerdo con el criterio CORRECT. 
+//Cada caso representa una situación que puede ocurrir en el uso real de la función, permitiendo verificar que devuelve el valor esperado en cada caso.
