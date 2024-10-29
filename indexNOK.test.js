@@ -8,5 +8,17 @@ describe("Función CalculaTipo", () => {
   test('Comprobación caso 4', () => {
     expect(CalculaTipo(1000, 400)).toBe(4);
   });
+  test("Comprobación caso 3", () => {
+    expect(CalculaTipo(300, 100)).toBe(3);
+  });
+  test('Comprobación caso 2', () => {
+    expect(CalculaTipo(300, 150)).toBe(2);
+  });
+  test("Comprobación caso 1", () => {
+    expect(CalculaTipo(800, 500)).toBe(1);
+  });
+  test("Comprobación caso 0", () => {
+    expect(CalculaTipo(500, 500)).toBe(0);
+  });
   
 });
